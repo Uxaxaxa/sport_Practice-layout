@@ -1,1 +1,85 @@
+/* включаю стили и задаю классы*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+:root{
+    --font-bold:"Montserrat", sans-serif;
+    --font-regular:"Montserrat", sans-serif;
+}
+/* Header */
+.header-container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    max-width: 1326px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 92px;
+}
+.logo{
+    display: block;
+    background-image: url("../img/logo.svg") ;
+    width: 97px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 52px;
+
+}
+
+ .header-nav{
+    display: flex;
+    color: black;
+    gap: 54px;
+ }
+ .nav-link{
+    color: black;
+    text-decoration: none; 
+    font-size: 18px;
+    font-family: var(--font-regular);
+    font-weight: 400;
+    padding-top: 52px;
+
+}
+
+.ellipse{
+/*     display: block;
+    background-image: url("../img/Ellipse.png");
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 53px;
+    right: 520px; */
+}
+
+ .nav-email{
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-family: var(--font-bold);
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 53px;
+ }
+ .nav-email::before{
+    contain: '';
+    display: block;
+    background-image: url("../img/Ellipse.png");
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
