@@ -235,7 +235,7 @@
     background-color: white;
     padding: 20px;
     box-sizing: border-box;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #2B3541;
 }
 .training-icon{
     width: 100%;
@@ -275,5 +275,5 @@
     background: linear-gradient(#FBF138 0%, #FDF9B6 45%, #FDF9B6 100%);
     padding: 20px;
     box-sizing: border-box;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #2B3541;
 }
