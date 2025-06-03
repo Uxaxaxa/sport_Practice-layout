@@ -22,7 +22,7 @@
     background-color: white;
     max-width: 1326px;
     width: 100%;
-    margin: 0 auto;
+    margin: 19px auto;
     gap: 73px;
     box-sizing: border-box;
 }
@@ -92,10 +92,11 @@
     width: 100%;
     max-width: 1326px;
     display: flex;
-    margin: 0;
+    /* margin: 0 auto; */
     justify-content: center;
     align-items: center;
     gap: 0;
+    position: relative;
 }
 
 .hero-container{
@@ -104,7 +105,7 @@
     justify-content: center;
     width: 100%;
     max-width: 632px;
-    margin: 0;
+    margin: 0 auto;
 }
 .hero-h1{
     font-family: var(--font-bold);
@@ -156,9 +157,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-
+.btn-request-subs{
+    width: 100%;
+    max-width: 252px;
+    height: 64px;
+    text-align: center;
+    background-color: yellow;
+    font-family: var(--font-bold);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    color: black;
+    margin: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-request-a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-bold);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    padding: 20px 0;
+}
 .rectangle{
     width: 100%;
     max-width: 464px;
@@ -174,22 +205,38 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 10%;
-    right: 10%;
+    top: 3.5%;
+    right: 0;
+}
+.arrow{
+    width: 50px;
+    max-width: 52px;
+    height: 55px;
+    background-image:url(../icon/Arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 95%;
+    left: 10%;
 }
 
 /* Расписание тренировок grid сетка */
 
 .list-section{
     display: grid;
-    padding-left: 140px;
+    /* margin: 0 auto; */
+    justify-content: center;
+    width: 100%;
+    max-width: 1920px;
 }
 .training{
     display: flex;
     width: 100%;
     max-width: 1326px;
-    gap: 601px;
-    justify-content: center;
+    gap: 200px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
 }
 .training-h2{
     font-family: var(--font-bold);
@@ -220,10 +267,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
-    max-width: 1143px;
+    max-width: 1920px;
     padding-bottom: 100px;
     padding-top: 50px;
-    padding-left: 77px;
+    padding-left: 60px;
 }
 .list-training{
     display: flex;
@@ -352,6 +399,20 @@
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+}
+.btn-subscribe-a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-bold);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
 }
 #email{
     width: 100%;
@@ -398,6 +459,7 @@
     justify-content: center;
     gap: 77px;
     padding-left: 100px;
+    padding-bottom: 50px;
 }
 
 .about-textbox{
@@ -410,7 +472,9 @@
     background-color: white;
     padding: 20px;
     box-sizing: border-box;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    
 }
 .about-h2{
     font-family: var(--font-bold);
@@ -448,7 +512,6 @@
     width: 100%;
     max-width: 1141px;
     max-height: 97px;
-    margin-bottom: 50px;
     padding-left: 110px;
 }
 .discription{
@@ -489,6 +552,7 @@
     gap: 73px;
     box-sizing: border-box;
     padding-left: 82px;
+    padding: 40px 82px;
 }
 
 .footer-discription{
