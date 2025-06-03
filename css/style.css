@@ -5,7 +5,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-Bold.ttf');
@@ -183,6 +182,7 @@
 
 .list-section{
     display: grid;
+    padding-left: 140px;
 }
 .training{
     display: flex;
@@ -320,14 +320,194 @@
 .form-container{
     display: flex;
     width: 100%;
+    justify-content: center;
+}
+.subscribe-form{
+    display: flex;
+    width: 100%;
+    max-width: 597px;
+    height: 100%;
+    max-height: 200px;
+    background-color: #F3F3F3;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 20px;
+    border-style: none;
+}
+.btn-subscribe{
+    width: 100%;
+    max-width: 225px;
+    height: 65px;
+    text-align: center;
+    background-color: yellow;
+    font-family: var(--font-bold);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    border-style: none;
+    color: black;
+    margin: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+#email{
+    width: 100%;
     max-width: 372px;
     height: 65px;
-    background-color: white;
-    border: 1px solid #2B3541;
-    box-sizing: border-box;
+    padding: 0 20px;
     font-family: var(--font-regular);
     font-weight: 400;
     font-size: 16px;
     line-height: 125%;
     color: black;
+    border: 1px solid #2B3541;
+    box-sizing: border-box;
+    border-style: none;
+}
+
+/*О компании*/
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 700px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 0;
+    padding-top: 158px;
+    padding-bottom: 170px;
+}
+.about-wrapper{
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 513px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    gap: 77px;
+    padding-left: 100px;
+}
+
+.about-textbox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 483px;
+    height: 100%;
+    max-height: 200px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.about-h2{
+    font-family: var(--font-bold);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: black;
+    margin: 0;
+    width: 100%;
+    max-width: 356px;
+}
+.about-description{
+    font-family: var(--font-regular);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+    width: 100%;
+    max-width: 483px;
+    max-height: 108px;
+    padding-top: 20px;
+}
+.about-image{
+    width: 100%;
+    max-width: 513px;
+    height: 336px;
+    max-height: 336px;
+    background-image:url(../img/@2x/trainer@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: block;
+}
+.discription-container{
+    display: flex;
+    width: 100%;
+    max-width: 1141px;
+    max-height: 97px;
+    margin-bottom: 50px;
+    padding-left: 110px;
+}
+.discription{
+    display: flex;
+    flex-direction: column;
+    padding-right: 67px;
+}
+.discription-title{
+    font-family: var(--font-bold);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    color: black;
+    margin: 0;
+}
+.discription-text{
+    font-family: var(--font-regular);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+    color: black;
+    margin: 0;
+    padding-top: 10px;
+    width: 100%;
+    max-width: 251px;
+    max-height: 23px;
+}
+
+/* Footer */
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 73px;
+    box-sizing: border-box;
+    padding-left: 82px;
+}
+
+.footer-discription{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 1326px;
+    width: 100%;
+}
+
+.footer-p {
+    font-family: var(--font-regular);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    color: black;
+    margin: 0;
+    padding-top: 10px;
+    width: 100%;
+    max-width: 431px;
+    max-height: 23px;
 }
