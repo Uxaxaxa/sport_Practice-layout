@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Спорт это жизнь!</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="logo"></div>
+            <button class="burger-menu" onclick="openModal()"></button>
             <nav class="header-nav">
                 <a href="#schedule" class="nav-link"> Мероприятия </a>
                 <a href="#schedule" class="nav-link"> Расписание </a>
@@ -23,7 +24,7 @@
         <section class="hero-section">
             <div class="hero-container">
                 <h1 class="hero-h1">онлайн тренировки любой сложности</h1>
-                <p class="hero-p">>&gt;15 тренировок</p>
+                <p class="hero-p"> >15 тренировок</p>
                 <p class="hero-descriptions">в области спортивной физиологии и нутрициологии</p>
                 <div class="btn-request"><p>узнать подробнее</p></div>
             </div>
@@ -39,30 +40,35 @@
             </div>
                 <div class="list-grid-training">
                     <div class="list-training">
-                    <h3 class="training-title">22 июня, 10:00</h3>
-                    <img src="../icon/body.svg" alt="" class="training-icon">
-                    <p class="training-description">Функциональный тренинг</p>
+                        <h3 class="training-title">22 июня, 10:00</h3>
+                        <img src="../icon/body.svg" alt="" class="training-icon">
+                        <p class="training-description">Функциональный тренинг</p>
                     </div>
-                    <div class="list-training"><h3 class="training-title">24 июня, 10:00</h3>
-                    <img src="../icon/bottle.svg" alt="" class="training-icon">
-                    <p class="training-description">Body sculpt</p></div>
-                    <div class="list-training"><h3 class="training-title">26 июня, 11:00</h3>
+                    <div class="list-training">
+                        <h3 class="training-title">24 июня, 10:00</h3>
+                        <img src="../icon/bottle.svg" alt="" class="training-icon">
+                        <p class="training-description">Body sculpt</p></div>
+                    <div class="list-training">
+                        <h3 class="training-title">26 июня, 11:00</h3>
                         <img src="../icon/dumbbell.svg" alt="" class="training-icon">
-                    <p class="training-description">L.A.B.</p></div>
-                    <div class="big-list-training"><h3 class="training-title">23 июня, 10:00</h3>
+                        <p class="training-description">L.A.B.</p></div>
+                    <div class="big-list-training">
+                        <h3 class="training-title">23 июня, 10:00</h3>
                         <img src="../icon/jump.svg" alt="" class="training-icon">
-                    <p class="training-description">Силовой микс</p></div>
-                    <div class="list-training"><h3 class="training-title">25 июня, 11:00</h3>
+                        <p class="training-description">Силовой микс</p></div>
+                    <div class="list-training">
+                        <h3 class="training-title">25 июня, 11:00</h3>
                         <img src="../icon/heart.svg" alt="" class="training-icon">
-                    <p class="training-description">Дыхательные практики</p></div>
-                    <div class="list-training"><h3 class="training-title">27 июня, 10:00</h3>
+                        <p class="training-description">Дыхательные практики</p></div>
+                    <div class="list-training">
+                        <h3 class="training-title">27 июня, 10:00</h3>
                         <img src="../icon/weight.svg" alt="" class="training-icon">
-                    <p class="training-description">Комплексная разминка</p></div>
+                        <p class="training-description">Комплексная разминка</p></div>
                 </div>
         </section>
         <section class="lead">
             <div class="lead-container">
-                <div class="ellipse"></div>
+                <!-- <div class="ellipse"></div> -->
                 <h2 class="lead-title">Подпишитесь на рассылку</h2>
                 <div class="form-container">
                     <form action="/subscribe" method="post" class="subscribe-form">
@@ -122,5 +128,15 @@
         </div>
     </footer>
     <script src="../scripts/script.js"></script>
+    <div class="modal" id="modal">
+        <div class="logo_modal"></div>
+            <nav class="header-nav _modal">
+                <div class="logo_modal"></div>
+                <a href="#schedule" class="nav-link _modal"> Мероприятия </a>
+                <a href="#schedule" class="nav-link _modal"> Расписание </a>
+                <a href="#about" class="nav-link _modal"> О&nbsp;компании </a>
+            </nav>
+            <button class="close_modal" onclick="closeModal()"></button>
+    </div>
 </body>
 </html>

@@ -36,8 +36,67 @@
     background-size: contain;
     background-position: center;
 }
+.burger-menu{
+    display: none;
+    width: 29px;
+    height: 22px;
+    background-image: url("../icon/burger.svg");
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 587px;
+    height: 283px;
+    background-color: #F3F3F3;
+    align-items: start;
+    gap: 40px;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: absolute;
+    top: -400px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    transition: 0,5ms;
 
- .header-nav{
+}
+.logo_modal{
+    background-image: url("../img/logo.svg");
+    width: 100%;
+    max-width: 78px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.close_modal{
+    display: block;
+    width: 29px;
+    height: 22px;
+    background-image: url("../icon/close.png");
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    top: 16%;
+    right: 16%;
+}
+.header-nav._modal{
+    display: flex;
+    flex-direction: column;
+}
+.nav-link._modal {
+    font-family: var(--font-regular);
+    font-weight: 400;
+    font-size: 16px;
+}
+.header-nav{
     display: flex;
     color: black;
     gap: 48px;
@@ -88,14 +147,13 @@
 }
 
 /*Hero block*/
+
 .hero-section{
     width: 100%;
     max-width: 1326px;
     display: flex;
-    /* margin: 0 auto; */
     justify-content: center;
     align-items: center;
-    gap: 0;
     position: relative;
 }
 
@@ -224,7 +282,6 @@
 
 .list-section{
     display: grid;
-    /* margin: 0 auto; */
     justify-content: center;
     width: 100%;
     max-width: 1920px;
@@ -232,12 +289,10 @@
 .training{
     display: flex;
     width: 100%;
-    max-width: 1326px;
-    gap: 200px;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
 }
+
 .training-h2{
     font-family: var(--font-bold);
     font-weight: 700;
@@ -270,7 +325,7 @@
     max-width: 1920px;
     padding-bottom: 100px;
     padding-top: 50px;
-    padding-left: 60px;
+    padding-left: 10px;
 }
 .list-training{
     display: flex;
@@ -536,11 +591,9 @@
     width: 100%;
     max-width: 513px;
     height: 336px;
-    max-height: 336px;
     background-image:url(../img/@2x/trainer@2x.png);
     background-size: contain;
     background-repeat: no-repeat;
-    justify-content: center;
     display: block;
 }
 .description-container{
@@ -614,4 +667,105 @@
     width: 100%;
     max-width: 431px;
     max-height: 23px;
+}
+
+@media (max-width: 768px){
+    .burger-menu{
+    display: flex;
+    flex-grow: 1;
+    
+
+}
+.header-nav{
+    display: none;
+}
+.nav-email{
+    right: 10%;
+}
+.header-container{
+    max-width: 768px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+.hero-section{
+    max-width: 768px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero-h1{
+    font-size: 24px;
+    max-width: 310px;
+    max-height: 70px;
+}
+.hero-p{
+    font-size: 24px;
+    max-width: 210px;
+    max-height: 112px;
+    padding-top: 52px;
+}
+.hero-descriptions{
+    font-size: 16px;
+    max-width: 255px;
+    max-height: 49px;
+}
+
+.rectangle{
+    max-width: 447px;
+    height: 490px;
+    position: relative;
+    right: 10%;
+}
+
+.girl{
+    max-width: 399px;
+    height: 364px;
+    top: 33%;
+    right: 20%;
+}
+.list-grid-training{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.list-training{
+    max-width: 364px;
+    max-height: 224px;
+    justify-content: center;
+}
+
+.training-h2{
+    font-size: 40px;
+}
+.training-descriptions{
+    font-size: 28px;
+}
+.training-description{
+    font-family: var(--font-bold);
+    font-weight: 700;
+    font-size: 16px;
+}
+.training-title{
+    font-size: 12px;
+    padding-bottom: 50px;
+}
+.big-list-training{
+    max-width: 364px;
+    max-height: 224px;
+}
+.lead-container{
+    max-width: 768px;
+    max-height: 348px;
+}
+.lead-title{
+    font-size: 28px;}
+
+.lead-title::before{
+  top: 68%;
+  right: 97%;
+}
+.list-section{
+    max-width: 768px;
+    padding-left: 0px;
+}
 }

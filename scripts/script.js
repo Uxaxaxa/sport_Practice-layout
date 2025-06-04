@@ -34,6 +34,17 @@
        });
        }
 
+
+// Menu
+
+       function openModal() {
+           document.getElementById("modal").style.top = "0px";
+       }
+
+       function closeModal() {
+           document.getElementById("modal").style.top = "-400px";
+       }
+
        /* function scrollFunction(){
            if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
                document.getElementById('btndown').className = 'arrow visible';
